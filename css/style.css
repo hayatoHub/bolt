@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+/* 共通 */
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato";
+}
+
+.font-raleway {
+  font-family: "Raleway";
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: 12px;
+  color: #f2f2f2;
+  background: #74cfae;
+  transition: color .3s;
+}
+
+.btn:hover {
+  color: #4e4e4e;
+}
+
+
+/* headerは下 */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: #fff;
+}
+
+.header-inner {
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+
+.bolt-icon {
+  color: #4e4e4e;
+  font-size: 40px;
+}
+
+.contact {
+  padding: 14px 12px;
+}
+
+
+/* headerは上まで */
+
+/* mainは下 */
+
+.main {
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+/* title */
+
+.title {
+  background: #f2f2f2;
+}
+
+.title-inner {
+  padding: 250px 0;
+  text-align: center;
+}
+
+.title-main {
+  color: #74cfae;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.title-text {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
+/* section-intro */
+
+.section-1 {
+  background: #74cfae;
+}
+
+.intro-inner {
+  padding-top: 50px;
+  display: flex;
+  text-align: center;
+}
+
+.intro-img {
+  width: 40%;
+}
+
+.iphone-img {
+  vertical-align: bottom;
+}
+
+.intro-text-box {
+  width: 60%;
+  color: #f2f2f2;
+}
+
+.intro-title {
+  font-size: 24px;
+}
+
+.intro-text {
+  font-size: 20px;
+  padding-top: 35px;
+  line-height: 1.5em;
+}
+
+/* article */
+
+.work-title {
+  font-size: 24px;
+}
+
+.article {
+  background: #f2f2f2;
+}
+
+.article-inner {
+  padding: 60px 0 70px;
+  display: flex;
+  text-align: center;
+}
+
+.work-icons {
+  margin-top: 40px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.work-icons li {
+  display: list-item;
+  margin-left: 100px;
+  margin-top: 80px;
+}
+
+.work-icons li a{
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.work-icons li a:hover {
+  opacity: 1;
+}
+
+.work-icons li:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.work-icons li:nth-child(-n + 3) {
+  margin-top: 0;
+}
+
+.work-text-box {
+  display: flex;
+  margin-top: 90px;
+  justify-content: center;
+}
+
+.work-text {
+  width: 460px;
+  color: #4e4e4e;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.work-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 20px;
+  margin: 0 0 0 90px;
+  box-sizing: border-box;
+  height: 45px;
+}
+
+/* section-skills */
+.section-2 {
+  background: #4e4e4e;
+  color: #f2f2f2;
+}
+
+.skill-inner {
+  padding: 70px 0 100px 0;
+  text-align: center;
+}
+
+.skill-title {
+  font-size: 24px;
+}
+
+.skill-list {
+  margin-top: 70px;
+  justify-content: center;
+  display: flex;
+}
+
+.skill-list li {
+  display: list-item;
+  margin-left: 180px;
+}
+
+.skill-list li:first-child {
+  margin-left: 0;
+}
+
+.skill-names {
+  font-size: 16px;
+  margin: 10px;
+}
+
+/* nav */
+
+.nav {
+  background: #f2f2f2;
+}
+
+.nav-inner {
+  padding: 200px 0 200px;
+  text-align: center;
+}
+
+.nav-btn-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-btn-list li {
+  display: list-item;
+}
+
+.nav-btn {
+  width: 185px;
+  font-size: 3em;
+  padding: 30px 0;
+  background: #f2f2f2;
+  color: #74cfae;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.nav-btn:hover {
+  background-color: #fff;
+  transition: background-color .3s;
+}
+
+/* mainは上まで */
+/* footerは下 */
+
+.footer {
+  background: #74cfae;;
+}
+
+.footer-inner {
+  display: flex;
+  padding: 20px 0 25px;
+}
+
+.footer-text {
+  display: flex;
+  color: #f2f2f2;
+  margin: 0 0 0 auto;
+}
+
+/* footerは上まで */
