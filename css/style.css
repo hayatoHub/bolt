@@ -2,22 +2,22 @@
 
 /* 共通 */
 
-a {
-  display: inline-block;
-  text-decoration: none;
+.inner {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 body {
   font-family: "Lato";
 }
 
-.font-raleway {
+.raleway {
   font-family: "Raleway";
 }
 
-.inner {
-  width: 1100px;
-  margin: 0 auto;
+a {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .btn {
@@ -52,7 +52,7 @@ body {
   justify-content: space-between;
 }
 
-.bolt-icon {
+.header_icon {
   color: #4e4e4e;
   font-size: 40px;
 }
