@@ -24,7 +24,7 @@ a {
   font-size: 12px;
   color: #f2f2f2;
   background: #74cfae;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .btn:hover {
@@ -68,7 +68,6 @@ a {
 
 .main {
   padding-top: 70px;
-  overflow: hidden;
 }
 
 /* title */
@@ -125,8 +124,8 @@ a {
 
 .intro-text {
   font-size: 20px;
-  padding-top: 35px;
-  line-height: 1.3;
+  margin-top: 35px;
+  line-height: 1.5em;
 }
 
 /* article */
@@ -180,11 +179,13 @@ a {
   display: flex;
   margin-top: 90px;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .work-text {
   width: 50%;
   color: #4e4e4e;
+  word-break: keep-all;
   text-align: center;
   line-height: 30px;
   font-size: 20px;
@@ -192,15 +193,8 @@ a {
 }
 
 .work-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px;
   padding: 14px 20px;
-  margin: 0 0 0 90px;
-  box-sizing: border-box;
-  line-height: 30px;
-  height: 45px;
+  margin-left: 90px;
 }
 
 /* section-skills */
@@ -235,7 +229,7 @@ a {
 
 .skill-names {
   font-size: 16px;
-  margin: 10px;
+  margin-top: 10px;
 }
 
 /* nav */
@@ -245,7 +239,7 @@ a {
 }
 
 .nav-inner {
-  padding: 200px 0 200px;
+  padding: 200px 0;
   text-align: center;
 }
 
@@ -266,7 +260,7 @@ a {
   background: #f2f2f2;
   color: #74cfae;
   text-align: center;
-  transition: background .3s;
+  transition: background 0.3s;
 }
 
 .nav-btn:hover {
@@ -281,14 +275,12 @@ a {
 }
 
 .footer-inner {
-  display: flex;
   padding: 20px 0 25px;
 }
 
 .footer-text {
-  display: flex;
   color: #f2f2f2;
-  margin: 0 0 0 auto;
+  text-align: right;
 }
 
 /* footerは上まで */
