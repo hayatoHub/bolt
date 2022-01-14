@@ -31,6 +31,9 @@ body {
   color: #4e4e4e;
 }
 
+.hamburger {
+  display: none;
+}
 
 /* headerは下 */
 
@@ -39,7 +42,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 100;
   background: #fff;
 }
 
@@ -93,7 +96,7 @@ body {
 
 /* section-intro */
 
-.section-1 {
+.section-intro {
   background: #74cfae;
 }
 
@@ -113,7 +116,7 @@ body {
 
 .intro-text-box {
   width: 60%;
-  color: #f2f2f2;
+  color: #fff;
 }
 
 .intro-title {
@@ -123,15 +126,10 @@ body {
 .intro-text {
   font-size: 20px;
   padding-top: 35px;
-  line-height: 1.5em;
+  line-height: 1.3;
 }
 
 /* article */
-
-.work-title {
-  font-size: 24px;
-  font-weight: 100;
-}
 
 .article {
   background: #f2f2f2;
@@ -139,7 +137,11 @@ body {
 
 .article-inner {
   padding: 60px 0 70px;
-  display: flex;
+}
+
+.work-title {
+  font-size: 24px;
+  font-weight: 100;
   text-align: center;
 }
 
@@ -147,10 +149,11 @@ body {
   margin-top: 40px;
   flex-wrap: wrap;
   display: flex;
+  justify-content: flex-start;
 }
 
 .work-icons li {
-  display: list-item;
+  font-size: 0;
   margin-left: 100px;
   margin-top: 80px;
 }
@@ -158,6 +161,7 @@ body {
 .work-icons li a{
   opacity: 0.7;
   transition: opacity 0.3s;
+  display: inline-block;
 }
 
 .work-icons li a:hover {
@@ -195,18 +199,18 @@ body {
   padding: 14px 20px;
   margin: 0 0 0 90px;
   box-sizing: border-box;
-  height: 45px;
   line-height: 30px;
+  height: 45px;
 }
 
 /* section-skills */
-.section-2 {
+.section-skill {
   background: #4e4e4e;
   color: #f2f2f2;
 }
 
 .skill-inner {
-  padding: 70px 0 100px 0;
+  padding: 70px 0 100px;
   text-align: center;
 }
 
@@ -215,9 +219,9 @@ body {
 }
 
 .skill-list {
-  margin-top: 70px;
   justify-content: center;
   display: flex;
+  margin-top: 30px;
 }
 
 .skill-list li {
@@ -257,16 +261,16 @@ body {
 
 .nav-btn {
   width: 185px;
-  font-size: 3em;
+  font-size: 48px;
   padding: 30px 0;
   background: #f2f2f2;
   color: #74cfae;
   text-align: center;
+  transition: background .3s;
 }
 
 .nav-btn:hover {
-  background-color: #fff;
-  transition: background-color .3s;
+  background: #fff;
 }
 
 /* mainは上まで */
@@ -288,3 +292,130 @@ body {
 }
 
 /* footerは上まで */
+
+/* @media */
+@media screen and ( max-width: 1199px ) {
+  /* 共通項 */
+  .inner {
+    width: 97%;
+  }
+
+  /* section-1 */
+
+  .intro-img {
+    width: 100%;
+  }
+
+  .intro-text-box {
+    width: 80%;
+    margin: 20px auto 0 ;
+  }
+
+  .intro-inner {
+    flex-direction: column;
+    padding: 50px 0 25px;
+  }
+
+  /* work */
+  .article-inner {
+    flex-direction: column;
+    padding: 60px 0 70px;
+    text-align: center;
+  }
+
+  .work-icons {
+    flex-wrap: wrap;
+  }
+
+  .work-icons li {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .work-icons li:nth-child(4) {
+    margin-top: 80px;
+  }
+  
+  .work-text-box {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .work-text {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .work-btn {
+    margin: 40px auto 0 ;
+  }
+
+  /* skill */
+  .skill-list {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+
+  .skill-list li {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and ( max-width: 767px ) {
+
+  .inner {
+    width: 97%;
+  }
+
+  .title-inner {
+    padding: 160px 0 130px;
+  }
+
+  .title-main {
+  font-size: 80px;
+  }
+
+  /* nav */
+  .nav-inner {
+    padding: 50px 0;
+  }
+  .nav-btn-list {
+    flex-wrap: wrap;
+  }
+
+  .nav-btn-list li{
+    width: 100%;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  .hamburger-border {
+    display: block;
+    width: 28px;
+    height: 2px;
+    margin-top: 7px;
+    background: #ddd;
+  }
+
+  .hamburger-border:first-child {
+    margin-top: 0;
+  }
+
+}
