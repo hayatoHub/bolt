@@ -325,7 +325,7 @@ a {
     margin-top: 0;
   }
 
-  .work-icons li:nth-child(4) {
+  .work-icons li:nth-child( 3n+1 ) {
     margin-top: 80px;
   }
   
